@@ -1,2 +1,2 @@
 # sistema-ventas
-sistema de ventas MisionTic 
+Sistema de ventas MisionTic
