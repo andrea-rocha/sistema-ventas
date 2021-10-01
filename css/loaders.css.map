@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;mCACmC;AAEnC,AAAA,OAAO,CAAA;EACL,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,WAAW,EAAE,OAAO;EACpB,MAAM,EAAE,MAAM;EACd,eAAe,EAAE,SAAS;EAC1B,iBAAiB,EAAE,SAAS;EAC5B,mBAAmB,EAAE,QAAQ;CAM9B;;AAbD,AASE,OATK,AASJ,MAAM,CAAC;EACN,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "../src/vibe/scss/components/loaders.scss"
+    ],
+    "names": [],
+    "file": "loaders.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;mCACmC;AAEnC,AAAA,MAAM,CAAC;EACN,OAAO,EAAE,KAAK,CAAA,UAAU;CACxB;;AACD,AAAA,aAAa,CAAC;EACb,OAAO,EAAE,YAAY,CAAA,UAAU;CAC/B;;AACD,AAAA,OAAO,CAAC;EACP,OAAO,EAAE,MAAM,CAAA,UAAU;CACzB;;AACD,AAAA,aAAa,CAAC;EACb,OAAO,EAAE,IAAI;CACb",
+    "sources": [
+        "../src/vibe/scss/components/utilities/display.scss"
+    ],
+    "names": [],
+    "file": "display.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;mCACmC;AAEnC,AAAA,SAAS,CAAC;EACT,aAAa,EAAE,GAAG;EACf,QAAQ,EAAE,MAAM;CACnB;;AACD,AAAA,SAAS,CAAC;EACN,aAAa,EAAE,KAAK;EACpB,QAAQ,EAAE,MAAM;CACnB",
+    "sources": [
+        "../src/vibe/scss/components/utilities/border-radius.scss"
+    ],
+    "names": [],
+    "file": "border-radius.css"
+}

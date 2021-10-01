@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;mCACmC;AAEnC,AAAA,aAAa,CAAC;EACb,KAAK,EAAE,OAAO;CACd;;AACD,AAAA,WAAW,CAAC;EACX,KAAK,EAAE,KAAK;CACZ;;AACD,AAAA,WAAW,CAAC;EACX,KAAK,EAAE,KAAK;CACZ",
+    "sources": [
+        "../src/vibe/scss/components/utilities/text-colors.scss"
+    ],
+    "names": [],
+    "file": "text-colors.css"
+}

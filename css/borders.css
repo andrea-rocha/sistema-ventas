@@ -1,0 +1,36 @@
+/* BODER UTILITY STYLES
+   ----------------------------- */
+.no-border {
+  border-color: transparent;
+  border-width: 0;
+}
+
+.no-borders {
+  border-width: 0 !important;
+}
+
+.b {
+  border-color: #d5dce6;
+  background-clip: padding-box;
+}
+
+.b-a {
+  border: 1px solid #d5dce6;
+}
+
+.b-t {
+  border-top: 1px solid #d5dce6;
+}
+
+.b-r {
+  border-right: 1px solid #d5dce6;
+}
+
+.b-b {
+  border-bottom: 1px solid #d5dce6;
+}
+
+.b-l {
+  border-left: 1px solid #d5dce6;
+}
+/*# sourceMappingURL=borders.css.map */

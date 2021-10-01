@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;mCACmC;AAEnC,AAAA,SAAS,CAAC;EACN,UAAU,EAAE,IAAI,CAAA,UAAU;CAC7B",
+    "sources": [
+        "../src/vibe/scss/components/utilities/backgrounds.scss"
+    ],
+    "names": [],
+    "file": "backgrounds.css"
+}

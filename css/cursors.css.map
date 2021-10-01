@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;mCACmC;AAEnC,AAAA,eAAe,CAAC;EACf,MAAM,EAAE,OAAO;CACf",
+    "sources": [
+        "../src/vibe/scss/components/utilities/cursors.scss"
+    ],
+    "names": [],
+    "file": "cursors.css"
+}
