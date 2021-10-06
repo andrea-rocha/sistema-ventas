@@ -8,70 +8,60 @@ table.table {
     width: 100%;
     color: $tableTextColor;
     background: #fff;
-
-	thead {
-	    background: $tableBgColorHeader;
-
-	    th {
-		    font-weight: 400;
-		    padding: 15px 20px;
-		    text-transform: uppercase;
-		    border: 1px solid $tableBorderColor;
-    		border-radius: 3px;
-	    }
-	}
-
-	tbody {
-		td {
-			padding: 10px 20px;
-    		border: 1px solid $tableBorderColor;
-    		border-radius: 3px;
-		    vertical-align: middle;
-		}
-	}
-
-	&.table-striped>tbody>tr:nth-of-type(odd) {
-	    background-color: $stripedTableColor;
-	}
+    thead {
+        background: $tableBgColorHeader;
+        th {
+            font-weight: 400;
+            padding: 15px 20px;
+            text-transform: uppercase;
+            border: 1px solid $tableBorderColor;
+            border-radius: 3px;
+        }
+    }
+    tbody {
+        td {
+            padding: 10px 20px;
+            border: 1px solid $tableBorderColor;
+            border-radius: 3px;
+            vertical-align: middle;
+        }
+    }
+    &.table-striped>tbody>tr:nth-of-type(odd) {
+        background-color: $stripedTableColor;
+    }
 }
 
 table.table-custom {
-
-	box-shadow: none;
-
-	thead {
-		background: transparent;
-	    border-bottom: 2px solid $tableBorderColor;
-
-		th {
-			border: 0;
-			border-bottom: 1px solid $tableBorderColor;
-		}
-	}
-	
-	tbody {
-		tr {
-			border-bottom: 1px solid $tableBorderColor;
-			
-			td {
-				border:0;
-			}
-
-			&:hover {
-				background: $tableBorderColor;
-			}
-		}
-	}
+    box-shadow: none;
+    thead {
+        background: transparent;
+        border-bottom: 2px solid $tableBorderColor;
+        th {
+            border: 0;
+            border-bottom: 1px solid $tableBorderColor;
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid $tableBorderColor;
+            td {
+                border: 0;
+            }
+            &:hover {
+                background: $tableBorderColor;
+            }
+        }
+    }
 }
 
 table.table-hover {
-	> tbody {
-		> tr {
-			&:hover {
-				background-color: $tableBgRowHover;
-			}
-		}
-	}
+    >tbody {
+        >tr {
+            &:hover {
+                background-color: $tableBgRowHover;
+            }
+        }
+    }
 }
 
 .table-responsive {
