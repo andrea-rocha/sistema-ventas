@@ -1,22 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import {
-  Card,
-  CardBody,
-  Button,
-  Table
-} from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Card, CardBody,  Table } from 'reactstrap';
 
 
-const ErrorPage = () => {
+const EmpleadosPage = () => {
     return ( 
     <div>
     <h1>Empleados</h1>
-    <NavLink to={ '/home'}>Go Home!</NavLink>
+    <NavLink to={ '/home'} className="btn btn-primary">ir a Inicio</NavLink>
     <div>
-    <Button color="primary">Adicionar Empleado</Button>{' '}
+      
     </div>
-    {/* <Card>
+    <Card>
             <CardBody>
                 Hover Table
                 <Table hover>
@@ -50,7 +45,7 @@ const ErrorPage = () => {
                     </tbody>
                 </Table>
             </CardBody>
-    </Card> */}
+    </Card>
     <div className="table-responsive">
   <table className="table">
     <thead>
@@ -60,6 +55,7 @@ const ErrorPage = () => {
         <th>Telefono</th>
         <th>Direccion de Tienda</th>
         <th>Estado</th>
+        
       </tr>
     </thead>
     <tbody>
@@ -108,4 +104,4 @@ const ErrorPage = () => {
     )
 };
 
-export default ErrorPage;
+export default EmpleadosPage;

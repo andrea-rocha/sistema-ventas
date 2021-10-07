@@ -20,7 +20,7 @@ import Feed from './pages/Feed';
 import Modals from './elements/Modals';
 import ProgressBars from './elements/ProgressBars';
 import PaginationPage from './elements/Pagination';
-import ErrorPage from './pages/404';
+import EmpleadosPage from './pages/empleados';
 
 // See React Router documentation for details: https://reacttraining.com/react-router/web/api/Route
 const pageList = [
@@ -110,9 +110,9 @@ const pageList = [
     component: SubNav,
   },
   {
-    name: '404',
-    path: '/pages/404',
-    component: ErrorPage,
+    name: 'Empleados',
+    path: '/pages/empleados',
+    component: EmpleadosPage,
   },
   {
     name: 'Analytics',

@@ -78,7 +78,7 @@ export default {
                 },
                 {
                     name: 'Empleados',
-                    url: '/pages/404',
+                    url: '/pages/empleados',
                 },
             ],
         },
