@@ -64,7 +64,7 @@ export default class DashboardLayout extends Component {
             <SidebarNav
               nav={nav}
               logo={Logo}
-              logoText="VIBE."
+              logoText="FENIX"
               isSidebarCollapsed={sidebarCollapsed}
               toggleSidebar={this.toggleSideCollapse}
               {...this.props}
@@ -124,14 +124,14 @@ function HeaderNav() {
       </NavItem>
       <UncontrolledDropdown nav inNavbar>
         <DropdownToggle nav caret>
-          New
+          Nuevo
         </DropdownToggle>
         <DropdownMenu right>
-          <DropdownItem>Project</DropdownItem>
-          <DropdownItem>User</DropdownItem>
+          <DropdownItem>Proyecto</DropdownItem>
+          <DropdownItem>Usuario</DropdownItem>
           <DropdownItem divider />
           <DropdownItem>
-            Message <Badge color="primary">10</Badge>
+            Mensaje <Badge color="primary">10</Badge>
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
@@ -140,8 +140,8 @@ function HeaderNav() {
           <Avatar size="small" color="blue" initials="JS" />
         </DropdownToggle>
         <DropdownMenu right>
-          <DropdownItem>Option 1</DropdownItem>
-          <DropdownItem>Option 2</DropdownItem>
+          <DropdownItem>Opcion 1</DropdownItem>
+          <DropdownItem>Opcion 2</DropdownItem>
           <DropdownItem divider />
           <DropdownItem>Reset</DropdownItem>
         </DropdownMenu>
