@@ -12,7 +12,6 @@ import Loaders from './elements/Loaders';
 import Avatars from './elements/Avatars';
 import Invoice from './pages/Invoice';
 import Analytics from './pages/Analytics';
-import CmsPage from './pages/Cms';
 import Widgets from './pages/Widgets';
 import BlankPage from './pages/BlankPage';
 import SubNav from './pages/SubNav';
@@ -21,6 +20,7 @@ import Modals from './elements/Modals';
 import ProgressBars from './elements/ProgressBars';
 import PaginationPage from './elements/Pagination';
 import EmpleadosPage from './pages/empleados';
+import Productos from './pages/productos';
 
 // See React Router documentation for details: https://reacttraining.com/react-router/web/api/Route
 const pageList = [
@@ -130,9 +130,9 @@ const pageList = [
     component: Invoice,
   },
   {
-    name: 'CMS',
-    path: '/apps/cms',
-    component: CmsPage,
+    name: 'Gestión de Productos',
+    path: '/apps/productos',
+    component: Productos,
   },
   {
     name: 'Widgets',

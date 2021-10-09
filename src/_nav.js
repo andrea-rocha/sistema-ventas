@@ -99,7 +99,7 @@ export default {
                 },
                 {
                     name: 'Gestión de Productos',
-                    url: '/apps/cms',
+                    url: '/apps/productos',
                 },
             ],
         },
