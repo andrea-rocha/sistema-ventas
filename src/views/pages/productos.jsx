@@ -35,54 +35,48 @@ class Productos extends Component {
                             <Row>
                               <Col md={6}>
                                   <FormGroup>
-                                      <Label for="nombre">Nombre</Label>
-                                      <Input type="text" name="name" id="name" />
-                                  </FormGroup>
-                                  <div class="form-group">
-                                      <label className="form-label" for="file">Upload Thumbnail</label>
-                                      <div className="form-control-wrap">
-                                      <div class="custom-file">
-                                        <input type="file" multiple="" class="custom-file-input" id="file"/>
-                                        <label class="custom-file-label" for="customFile">Seleccionar Archivo</label>
-                                      </div>
-                                      </div>
-                                  </div>
-                                  <FormGroup>
-                                      <Label for="telefono">Telefono</Label>
-                                      <Input type="text" name="telefono" id="telefono" />
-                                  </FormGroup>
-                                     
-                                  <FormGroup>
-                                      <Label for="exampleSelect">Cargo/Rol</Label>
-                                      <Input type="select" name="select" id="exampleSelect">
-                                        <option>Administrador</option>
-                                        <option>Vendedor</option>
-                                      </Input>
-                                  </FormGroup>
-                              </Col>
-                              <Col md={6}>
-                                  <FormGroup>
                                       <Label for="cedula">Código</Label>
                                       <Input type="text" name="name" id="cedula" />
                                   </FormGroup>
                                   <FormGroup>
-                                      <Label for="exampleFile">File</Label>
-                                      <Input className="custom-file" type="file" name="file" id="exampleFile" />
-                                      <FormText color="muted">
-                                        This is some placeholder block-level help text for the above input.
-                                        It's a bit lighter and easily wraps to a new line.
-                                      </FormText>
-                                    </FormGroup>
-                                    <FormGroup>
-                                      <Label for="direccion">Direccion</Label>
+                                      <Label for="direccion">Descripción</Label>
                                       <Input type="text" name="direccion" id="direccion" />
                                     </FormGroup>
+                                
+                                 
+                                  <FormGroup>
+                                      <Label for="telefono">Precio de Venta</Label>
+                                      <Input type="text" name="telefono" id="telefono" />
+                                  </FormGroup>
+                                  <FormGroup>
+                                      <Label for="telefono">Cantidad/Stock</Label>
+                                      <Input type="text" name="telefono" id="telefono" />
+                                  </FormGroup>  
+                                 
+                              </Col>
+                              <Col md={6}>
+                                
+                                  <FormGroup>
+                                      <Label for="nombre">Nombre</Label>
+                                      <Input type="text" name="name" id="name" />
+                                  </FormGroup>
+                                    <FormGroup>
+                                      <Label for="telefono">Precio de Compra</Label>
+                                      <Input type="text" name="telefono" id="telefono" />
+                                    </FormGroup>
+                                    <FormGroup>
+                                      <Label for="exampleSelect">Categoría</Label>
+                                      <Input type="select" name="select" id="exampleSelect">
+                                        <option>Tecnología</option>
+                                        <option>Calzado</option>
+                                        <option>Accesorios</option>
+                                      </Input>
+                                  </FormGroup>
                                     <FormGroup>
                                       <Label for="exampleSelect">Estado</Label>
                                       <Input type="select" name="select" id="exampleSelect">
-                                        <option>Nuevo</option>
-                                        <option>Autorizado</option>
-                                        <option>No Autorizado</option>
+                                        <option>Disponible</option>
+                                        <option>Sin Stock</option>
                                       </Input>
                                     </FormGroup>
                               </Col>
@@ -100,7 +94,6 @@ class Productos extends Component {
       <thead>
         <tr> 
           <th>Código</th>
-          <th>Imágen</th>
           <th>Nombre</th>
           <th>Descripción</th>
           <th>Precio de Compra</th>
@@ -112,17 +105,17 @@ class Productos extends Component {
       </thead>
       <tbody>
         <tr>
-          <td>#6H4G67</td>
-          <td>
-              <span class="user-avatar md">
-                <img
-                  src={reactFeature}
-                  style={{ width: 70, height: 70 }}
-                  alt="react.js"
-                  aria-hidden={true}
-                />
-              </span>
-          </td>       
+          <td>#6H4G67</td>    
+          <td>Laptop</td>
+          <td>Portátil HP G7 2P9Q0LT#ABM AMD 247 G7 (CHASIS CORPORATIVO) AMD 3020e 8GB 1TB RADEON VEGA 3</td>
+          <td>$1000.00</td>
+          <td>$800.00</td>
+          <td>Tecnología</td>
+          <td>100</td>
+          <td><label className="badge badge-danger">No Disponible</label></td>
+        </tr>
+        <tr>
+           <td>#6H4G67</td>   
           <td>Laptop</td>
           <td>Portátil HP G7 2P9Q0LT#ABM AMD 247 G7 (CHASIS CORPORATIVO) AMD 3020e 8GB 1TB RADEON VEGA 3</td>
           <td>$1000.00</td>
@@ -133,16 +126,7 @@ class Productos extends Component {
         </tr>
         <tr>
           <td>#6H4G67</td>
-          <td>
-              <span class="user-avatar md">
-                <img
-                  src={reactFeature}
-                  style={{ width: 70, height: 70 }}
-                  alt="react.js"
-                  aria-hidden={true}
-                />
-              </span>
-          </td>       
+         
           <td>Laptop</td>
           <td>Portátil HP G7 2P9Q0LT#ABM AMD 247 G7 (CHASIS CORPORATIVO) AMD 3020e 8GB 1TB RADEON VEGA 3</td>
           <td>$1000.00</td>
@@ -152,37 +136,7 @@ class Productos extends Component {
           <td><label className="badge badge-danger">No Disponible</label></td>
         </tr>
         <tr>
-          <td>#6H4G67</td>
-          <td>
-              <span class="user-avatar md">
-                <img
-                  src={reactFeature}
-                  style={{ width: 70, height: 70 }}
-                  alt="react.js"
-                  aria-hidden={true}
-                />
-              </span>
-          </td>       
-          <td>Laptop</td>
-          <td>Portátil HP G7 2P9Q0LT#ABM AMD 247 G7 (CHASIS CORPORATIVO) AMD 3020e 8GB 1TB RADEON VEGA 3</td>
-          <td>$1000.00</td>
-          <td>$800.00</td>
-          <td>Tecnología</td>
-          <td>100</td>
-          <td><label className="badge badge-danger">No Disponible</label></td>
-        </tr>
-        <tr>
-          <td>#6H4G67</td>
-          <td>
-              <span class="user-avatar md">
-                <img
-                  src={reactFeature}
-                  style={{ width: 70, height: 70 }}
-                  alt="react.js"
-                  aria-hidden={true}
-                />
-              </span>
-          </td>       
+          <td>#6H4G67</td>    
           <td>Laptop</td>
           <td>Portátil HP G7 2P9Q0LT#ABM AMD 247 G7 (CHASIS CORPORATIVO) AMD 3020e 8GB 1TB RADEON VEGA 3</td>
           <td>$1000.00</td>
