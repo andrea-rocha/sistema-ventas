@@ -8,7 +8,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route component={DashboardLayout} />
+        <Route path="/" exact>
+          <BlankPage />
+        </Route>
+        <Route component={DashboardLayout} exact/>
       </Switch>
     </BrowserRouter>
   );

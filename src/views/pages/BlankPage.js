@@ -107,19 +107,12 @@ const BlankPage = () => {
           <input className="elemento_input fuente" type="password" id="contraseña" name="contraseña" placeholder="Escribe tu contraseña" required="true" />
         </div>
         <div className="contenedor_boton_acceso">
-          <input className="elemento_input_boton fuente" type="submit" defaultValue="Ingresar" />
+          <button className="elemento_input_boton fuente">Ingresar</button>
         </div>
         <div>
         {!isLoggedIn &&
           <div id="google-signin"></div>
         }
-        </div>
-        <div className="contenedor_pregistro color_letra">
-          <span>¿No tienes cuenta?</span>
-          <a className="configuracion_enlaces" href="/registro.html">Regístrate</a>
-        </div>
-        <div className="contenedor_pcontraseña fuente">
-          <a className="configuracion_enlaces" href="/recuperar contraseña.html">¿Olvidaste tu contraseña?</a>
         </div>
       </form>
       </div>
