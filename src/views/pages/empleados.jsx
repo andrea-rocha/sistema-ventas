@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Modal, ModalHeader, ModalBody, Card, CardBody,  Table,Form, FormGroup, Label, Input, FormText, Col, Row } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, Card, Form, FormGroup, Label, Input, Col, Row } from 'reactstrap';
 
 class EmpleadosPage extends Component {
   constructor(props) {

@@ -121,7 +121,7 @@ const BlankPage = () => {
         {isLoggedIn &&
           <div>
             <div>
-              <img src={imageUrl} />
+              <img src={imageUrl}  alt="Descripcion de la imagen"/>
             </div>
             <div>{name}</div>
             <div>{email}</div>

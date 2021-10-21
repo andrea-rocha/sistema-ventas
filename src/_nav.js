@@ -5,71 +5,10 @@ export default {
             icon: 'Home',
         },
         {
-            name: 'UI Elements',
-            icon: 'Layers',
-            children: [{
-                    name: 'Buttons',
-                    url: '/elements/buttons',
-                },
-                {
-                    name: 'Grid',
-                    url: '/elements/grid',
-                },
-                {
-                    name: 'Alerts',
-                    url: '/elements/alerts',
-                },
-                {
-                    name: 'Typography',
-                    url: '/elements/typography',
-                },
-                {
-                    name: 'Cards',
-                    url: '/elements/cards',
-                },
-                {
-                    name: 'Tabs',
-                    url: '/elements/tabs',
-                },
-                {
-                    name: 'Tables',
-                    url: '/elements/tables',
-                },
-                {
-                    name: 'Breadcrumbs',
-                    url: '/elements/breadcrumbs',
-                },
-                {
-                    name: 'Forms',
-                    url: '/elements/forms',
-                },
-                {
-                    name: 'Modals',
-                    url: '/elements/modals',
-                },
-                {
-                    name: 'Loaders',
-                    url: '/elements/loaders',
-                },
-                {
-                    name: 'Avatars',
-                    url: '/elements/avatars',
-                },
-                {
-                    name: 'Progress Bars',
-                    url: '/elements/progressbars',
-                },
-                {
-                    name: 'Pagination',
-                    url: '/elements/pagination',
-                },
-            ],
-        },
-        {
-            name: 'Pages',
+            name: 'Paginas',
             icon: 'File',
             children: [{
-                    name: 'Blank',
+                    name: 'Login',
                     url: '/pages/blank',
                 },
                 {
@@ -83,19 +22,19 @@ export default {
             ],
         },
         {
-            name: 'Apps',
+            name: 'Gestión',
             icon: 'Cloud',
             children: [{
                     name: 'Analytics',
                     url: '/apps/analytics',
                 },
                 {
-                    name: 'Gestión de Ventas',
+                    name: 'Factura',
                     url: '/apps/invoice',
                 },
                 {
-                    name: 'Activity Feed',
-                    url: '/apps/feed',
+                    name: 'Gestión de Ventas',
+                    url: '/apps/ventas',
                 },
                 {
                     name: 'Gestión de Productos',
@@ -106,24 +45,11 @@ export default {
         {
             divider: true,
         },
-        {
-            name: 'Widgets',
-            url: '/widgets',
-            icon: 'Package',
-            badge: {
-                text: 'NEW',
-            },
-        },
+    
     ],
-    bottom: [{
-            name: 'Get Vibe',
-            url: 'https://github.com/NiceDash/Vibe',
-            icon: 'GitHub',
-            external: true,
-            target: '_blank',
-        },
+    bottom: [
         {
-            name: 'Account',
+            name: 'Cuenta',
             url: '/dashboard',
             icon: 'User',
             badge: {

@@ -15,12 +15,12 @@ import Analytics from './pages/Analytics';
 import Widgets from './pages/Widgets';
 import BlankPage from './pages/BlankPage';
 import SubNav from './pages/SubNav';
-import Feed from './pages/Feed';
 import Modals from './elements/Modals';
 import ProgressBars from './elements/ProgressBars';
 import PaginationPage from './elements/Pagination';
 import EmpleadosPage from './pages/empleados';
 import Productos from './pages/productos';
+import Ventas from './pages/ventas';
 
 // See React Router documentation for details: https://reacttraining.com/react-router/web/api/Route
 const pageList = [
@@ -120,9 +120,9 @@ const pageList = [
     component: Analytics,
   },
   {
-    name: 'Activity Feed',
-    path: '/apps/feed',
-    component: Feed,
+    name: 'Gestion de Ventas',
+    path: '/apps/ventas',
+    component: Ventas,
   },
   {
     name: 'Invoice',
