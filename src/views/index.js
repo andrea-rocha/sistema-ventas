@@ -13,7 +13,7 @@ import Avatars from './elements/Avatars';
 import Invoice from './pages/Invoice';
 import Analytics from './pages/Analytics';
 import Widgets from './pages/Widgets';
-import BlankPage from './pages/BlankPage';
+import Login from './pages/login';
 import SubNav from './pages/SubNav';
 import Modals from './elements/Modals';
 import ProgressBars from './elements/ProgressBars';
@@ -100,9 +100,9 @@ const pageList = [
     component: Avatars,
   },
   {
-    name: 'Blank',
-    path: '/pages/blank',
-    component: BlankPage,
+    name: 'login',
+    path: '/pages/login',
+    component: Login,
   },
   {
     name: 'Sub Navigation',

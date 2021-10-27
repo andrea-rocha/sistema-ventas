@@ -7,6 +7,8 @@
   "copyright": "Copyright 2019 Nice Dash",
   "private": true,
   "dependencies": {
+    "@auth0/auth0-react": "^1.8.0",
+    "axios": "^0.24.0",
     "bootstrap": "^4.3.1",
     "chart.js": "^2.7.3",
     "classnames": "^2.2.6",

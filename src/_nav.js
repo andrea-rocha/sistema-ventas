@@ -9,7 +9,7 @@ export default {
             icon: 'File',
             children: [{
                     name: 'Login',
-                    url: '/pages/blank',
+                    url: '/pages/login',
                 },
                 {
                     name: 'Sub Navigation',
@@ -54,7 +54,6 @@ export default {
             icon: 'User',
             badge: {
                 variant: 'success',
-                text: '3',
             },
         },
     ],

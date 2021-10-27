@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 // import reactFeature from '../../assets/images/react-feature.svg';
 import { Button, Modal, ModalHeader, ModalBody, Card, Form, FormGroup, Label, Input, Col, Row } from 'reactstrap';
-
+import axios from 'axios';
 
 class Productos extends Component {
     constructor(props) {
@@ -17,6 +17,43 @@ class Productos extends Component {
           this.setState(prevState => ({
               modal: !prevState.modal
           }));
+      }
+      
+      state = {
+        productos: []
+      }
+    
+      //Se ejecuta cuando se renderice el componente
+      componentDidMount() {
+        //Consumo get
+        axios.get(`http://localhost:3001/api/producto`)
+          .then(res => {
+            const productos = res.data.productos;
+            this.setState({ productos });
+          })
+      }
+    
+      //Se ejecuta cuando se precione el botón del formulario
+      handleSubmit(event) {
+        //event.preventDefault();
+    
+        //consumo post
+        axios.post(`http://localhost:3001/api/producto`, {
+          codigo: event.target.codigo.value,
+          nombre: event.target.nombre.value,
+          precio: event.target.precio.value,
+          disponible: event.target.disponible.checked
+        })
+        .then(res=>{
+          alert(res.data.message);
+          console.log(res);
+        })
+        .catch(err=>{
+          alert(err);
+          console.log(err);
+        });
+        
+    
       }
     render() {
         return (

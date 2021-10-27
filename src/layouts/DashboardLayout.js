@@ -8,10 +8,13 @@ import nav from '../_nav';
 import routes from '../views';
 import ContextProviders from '../vibe/components/utilities/ContextProviders';
 import handleKeyAccessibility, { handleClickAccessibility } from '../vibe/helpers/handleTabAccessibility';
+import PrivateRoute from '../views/pages/PrivateRoute';
+import { useAuth0 } from "@auth0/auth0-react";
 
 const MOBILE_SIZE = 992;
 
 export default class DashboardLayout extends Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -52,11 +55,14 @@ export default class DashboardLayout extends Component {
   closeChat = () => {
     this.setState({ showChat1: false });
   };
-
+  
   render() {
     const { sidebarCollapsed } = this.state;
     const sidebarCollapsedClass = sidebarCollapsed ? 'side-menu-collapsed' : '';
+  
+    
     return (
+      <PrivateRoute>
       <ContextProviders>
         <div className={`app ${sidebarCollapsedClass}`}>
           <PageAlert />
@@ -107,11 +113,13 @@ export default class DashboardLayout extends Component {
           </Chat.Container>
         </div>
       </ContextProviders>
+      </PrivateRoute>
     );
   }
 }
 
 function HeaderNav() {
+  const { logout } = useAuth0();
   return (
     <React.Fragment>
       <NavItem>
@@ -135,17 +143,19 @@ function HeaderNav() {
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
-      <UncontrolledDropdown nav inNavbar>
-        <DropdownToggle nav>
-          <Avatar size="small" color="blue" initials="JS" />
-        </DropdownToggle>
-        <DropdownMenu right>
-          <DropdownItem>Opcion 1</DropdownItem>
-          <DropdownItem>Opcion 2</DropdownItem>
-          <DropdownItem divider />
-          <DropdownItem>Reset</DropdownItem>
-        </DropdownMenu>
-      </UncontrolledDropdown>
+
+        <UncontrolledDropdown nav inNavbar>
+          <DropdownToggle nav>
+            <Avatar size="small" color="blue" initials="JS" />
+          </DropdownToggle>
+          <DropdownMenu right>
+            <DropdownItem>Opcion 1</DropdownItem>
+            <DropdownItem>Opcion 2</DropdownItem>
+            <DropdownItem divider />
+            <DropdownItem><button  onClick={() => logout({ returnTo: window.location.origin })} className='btn-primary'>Log Out</button></DropdownItem>
+          </DropdownMenu>
+        </UncontrolledDropdown>
+
     </React.Fragment>
   );
 }
