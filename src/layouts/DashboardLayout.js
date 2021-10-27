@@ -59,7 +59,6 @@ export default class DashboardLayout extends Component {
   render() {
     const { sidebarCollapsed } = this.state;
     const sidebarCollapsedClass = sidebarCollapsed ? 'side-menu-collapsed' : '';
-  
     
     return (
       <PrivateRoute>
@@ -119,43 +118,23 @@ export default class DashboardLayout extends Component {
 }
 
 function HeaderNav() {
-  const { logout } = useAuth0();
+  const { user, logout  } = useAuth0();
   return (
     <React.Fragment>
-      <NavItem>
-        <form className="form-inline">
-          <input className="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search" />
-          <Button type="submit" className="d-none d-sm-block">
-            <i className="fa fa-search" />
-          </Button>
-        </form>
-      </NavItem>
       <UncontrolledDropdown nav inNavbar>
         <DropdownToggle nav caret>
-          Nuevo
+        {/* <Avatar size="small" color="blue" initials="JS" /> */}
+        <img className="rounded-circle" width="28" height="28" src={user.picture} alt={user.name} />
         </DropdownToggle>
         <DropdownMenu right>
-          <DropdownItem>Proyecto</DropdownItem>
-          <DropdownItem>Usuario</DropdownItem>
+          <DropdownItem>{user.name}</DropdownItem>
+          <DropdownItem>{user.email}</DropdownItem>
           <DropdownItem divider />
           <DropdownItem>
-            Mensaje <Badge color="primary">10</Badge>
+            <Button onClick={() => logout({ returnTo: window.location.origin })} color="primary">Cerrar sesión</Button>
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledDropdown>
-
-        <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle nav>
-            <Avatar size="small" color="blue" initials="JS" />
-          </DropdownToggle>
-          <DropdownMenu right>
-            <DropdownItem>Opcion 1</DropdownItem>
-            <DropdownItem>Opcion 2</DropdownItem>
-            <DropdownItem divider />
-            <DropdownItem><button  onClick={() => logout({ returnTo: window.location.origin })} className='btn-primary'>Log Out</button></DropdownItem>
-          </DropdownMenu>
-        </UncontrolledDropdown>
-
     </React.Fragment>
   );
 }

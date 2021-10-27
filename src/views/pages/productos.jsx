@@ -41,7 +41,10 @@ class Productos extends Component {
         axios.post(`http://localhost:3001/api/producto`, {
           codigo: event.target.codigo.value,
           nombre: event.target.nombre.value,
-          precio: event.target.precio.value,
+          descripcion: event.target.descripcion.value,
+          precioCompra: event.target.precioCompra.value,
+          precioVenta: event.target.precioVenta.value,
+          cantidad: event.target.cantidad.value,
           disponible: event.target.disponible.checked
         })
         .then(res=>{
@@ -118,7 +121,7 @@ class Productos extends Component {
                                     </FormGroup>
                               </Col>
                             </Row>
-                            <Button color="primary" >Adicionar</Button>
+                            <Button type="submit" color="primary" >Adicionar</Button>
                           </Form>
                           </ModalBody>
                       </Modal>

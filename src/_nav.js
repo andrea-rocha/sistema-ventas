@@ -5,28 +5,12 @@ export default {
             icon: 'Home',
         },
         {
-            name: 'Paginas',
-            icon: 'File',
-            children: [{
-                    name: 'Login',
-                    url: '/pages/login',
-                },
-                {
-                    name: 'Sub Navigation',
-                    url: '/pages/subnav',
-                },
+            name: 'Gestión',
+            icon: 'Cloud',
+            children: [
                 {
                     name: 'Empleados',
                     url: '/pages/empleados',
-                },
-            ],
-        },
-        {
-            name: 'Gestión',
-            icon: 'Cloud',
-            children: [{
-                    name: 'Analytics',
-                    url: '/apps/analytics',
                 },
                 {
                     name: 'Factura',

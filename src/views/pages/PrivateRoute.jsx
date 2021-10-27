@@ -10,8 +10,6 @@ const PrivateRoute = ({children}) => {
     if (isLoading) {
         return <Loader type="bars" />;
     }
-
-   
     return  isAuthenticated  ? <>{children}</>:
     <div>
         <UncontrolledAlert color="danger">

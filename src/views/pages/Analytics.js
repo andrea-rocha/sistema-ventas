@@ -98,7 +98,7 @@ export default class AnalyticsPage extends Component {
     return (
       <div>
         <div className="m-b">
-          <h2>Good morning!</h2>
+          <h2>Bienvenido</h2>
           <p className="text-muted">
             Here's what's going on with your business today.
           </p>

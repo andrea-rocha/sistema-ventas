@@ -9,7 +9,7 @@ export default function App() {
     <Auth0Provider
         domain="fenix-misiontic.us.auth0.com"
         clientId="8yfNK7OxpxvHLU71bqVXVc1w6mEJZlwm"
-        redirectUri={window.location.origin}
+        redirectUri="http://localhost:3000/home"
     >
       <BrowserRouter>
         <Switch>
